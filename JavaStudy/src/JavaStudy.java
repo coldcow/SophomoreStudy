@@ -1,30 +1,66 @@
 import java.util.*;
+import java.io.*;
 
 public class JavaStudy {
 	public static void main(String[] args) {
-		HashMap<String, Double> manage = new HashMap<String, Double>();
-		Set<String> key = manage.keySet();
-		Iterator<String> it = key.iterator();
-		Scanner sc = new Scanner(System.in);
-		
-		for (int i=0; i<5; i++) {
-			System.out.println("name and grade >> ");
-			String name = sc.next();
-			double grade = sc.nextDouble();
-			manage.put(name, grade);
-		}
-		System.out.println("Scholarship criteria >> ");
-		double criteria = sc.nextDouble();
-		
-		while(it.hasNext()) {
-			String stName = it.next();
-			if (manage.get(stName) > criteria) {
-				System.out.println(stName);
-			}
-		}
-		
+//		Scanner sc = new Scanner(System.in);
+//		
+//		HashMap<String, Double> manage
 	}
 }
+
+// EXERCISE 4
+//Scanner sc = new Scanner(System.in);
+//HashMap<String, Double> manage = new HashMap<String, Double>();
+//
+//for (int i=0; i<5; i++) {
+//	System.out.println("name and grade >> ");
+//	String text = sc.nextLine();
+//	StringTokenizer st = new StringTokenizer(text, " ");
+//	
+//	String name = st.nextToken().trim();
+//	double grade = Double.parseDouble(st.nextToken().trim());
+//	manage.put(name, grade);
+//}
+//System.out.println("Scholarship criteria >> ");
+//double cutline = sc.nextDouble();
+//
+//Set<String> key = manage.keySet();
+//Iterator<String> it = key.iterator();
+//
+//System.out.println("Scholarship students: ");
+//
+//while(it.hasNext()) {
+//	String name = it.next();
+//	double grade = manage.get(name);
+//	if (grade >= cutline)
+//		System.out.println(name + "");
+//}
+//
+//sc.close();
+
+// EXERCISE 4
+//HashMap<String, Double> manage = new HashMap<String, Double>();
+//Set<String> key = manage.keySet();
+//Iterator<String> it = key.iterator();
+//Scanner sc = new Scanner(System.in);
+//
+//for (int i=0; i<5; i++) {
+//	System.out.println("name and grade >> ");
+//	String name = sc.next();
+//	double grade = sc.nextDouble();
+//	manage.put(name, grade);
+//}
+//System.out.println("Scholarship criteria >> ");
+//double criteria = sc.nextDouble();
+//
+//while(it.hasNext()) {
+//	String stName = it.next();
+//	if (manage.get(stName) > criteria) {
+//		System.out.println(stName);
+//	}
+//}
+
 
 // EXERCISE 3
 //Vector<Integer> precipitation = new Vector<Integer>();
